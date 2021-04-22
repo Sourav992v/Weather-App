@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/image_view_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_cloud_queue_24"
+        tools:src="@drawable/ic_cloud_queue_24" />
+
+    <TextView
+        android:id="@+id/text_view_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/image_view_icon"
+        android:ems="10"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Temperature" />
+
+    <TextView
+        android:id="@+id/text_view_temp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@id/text_view_temp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_green_dark"
+        tools:text="43.5" />
+
+    <TextView
+        android:id="@+id/text_view_app_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/image_view_icon"
+        android:layout_below="@id/text_view_temp"
+        android:ems="10"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Apparent Temp" />
+
+    <TextView
+        android:id="@+id/apparent_temp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_below="@id/text_view_temp_value"
+        android:layout_toEndOf="@id/text_view_temp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_red_light"
+        tools:text="43.5" />
+
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_app_temp"
+        android:layout_toEndOf="@id/image_view_icon"
+        android:layout_marginStart="16dp"
+        android:ems="8"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="14th April"/>
+    <TextView
+        android:id="@+id/summery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/image_view_icon"
+        tools:text="Cloudy"/>
+
+</RelativeLayout>

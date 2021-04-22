@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/hourlyFragment">
+
+    <fragment
+        android:id="@+id/hourlyFragment"
+        android:name="com.sourav.weatherapp.presentation.HourlyFragment"
+        android:label="Weather Hourly"
+        tools:layout="@layout/fragment_hourly" />
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.sourav.weatherapp.presentation.DailyFragment"
+        android:label="Weather Daily"
+        tools:layout="@layout/fragment_daily" />
+
+</navigation>
